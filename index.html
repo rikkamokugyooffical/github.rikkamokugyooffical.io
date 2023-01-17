@@ -1,0 +1,141 @@
+<!--由v1nny UID:611055984-->
+<!--木泉kina UID:475866894-->
+<!--玖渚智心 UID:106111618-->
+<!--制作，本软件不盈利，不进行任何商业活动-->
+<!--请不要相信任何由非上述up主发送的任何应用版本-->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <style>
+    body {
+      background-color: black;
+    }
+
+    #my {
+      border-radius: 100%;
+      width: 180px;
+      height: 180px;
+      margin-top: 60px;
+      margin-left: 60px;
+    }
+
+    #cz {
+      position: absolute;
+      width: 150px;
+      left: 200px;
+      top: 230px;
+      transform-origin: right bottom;
+      z-index:1;
+    }
+
+    h2 {
+      color: white;
+      margin-top: 120px;
+    }
+
+    .n {
+      margin-left: 70px;
+      margin-top: -220px;
+      position: relative;
+      color: transparent;
+    }
+
+    @keyframes muyu {
+      50% {
+        transform: scale(0.9);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    @keyframes jy {
+      0% {
+        bottom: 0px;
+        color: transparent;
+      }
+
+      100% {
+        bottom: 20px;
+        color: white;
+      }
+    }
+    
+  </style>
+</head>
+<h2 id="gdz">功德:0</h2>
+<img id="cz" src="chui.png" style="transform:scale(1.1)"/>
+<img id="my" src="muyu.png" />
+<p class="n" id="n" align="center">功德+</p>
+<script>
+  var gdnum = prompt('敲击一次的公德数')
+  var gdnum = Number(gdnum)
+  var gd = 0;
+  var img = document.getElementById("my")
+  var ch = document.getElementById("cz")
+  var jy = document.getElementById("n")
+  var yot = document.getElementById("yt")
+  img.onclick = function () {
+    gd += gdnum;
+    document.getElementById("gdz").innerHTML = "功德:" + gd;
+    var mp3url = "muyu.mp3";
+    var player = new Audio(mp3url);
+    player.play();
+
+    jy.animate({
+      color: "white",
+      transform: ["translateY(20px)", "translateY(-20px)"],
+      opacity: [0, 1, 0]
+    }, {
+      duration: 500
+    });
+    ch.animate([
+      { transform: "rotate(-19deg)" },
+      { transform: "rotate(0deg)" }
+    ], {
+      duration: 200
+    });
+    img.animate([
+      { transform: "scale(0.9)" },
+      { transform: "scale(1)" }
+    ], {
+      duration: 200
+    });
+  }
+
+</script>
+<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+<a href="other.html">关于</a>
+</body>
+</html>
+<!--诶！乱扒人家源代码的可不是好孩子哦~-->
+<!--六花❄️天长地久🌸我只注视你一人​-->
+<!--中二病永不毕业！-->
